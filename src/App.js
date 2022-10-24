@@ -135,7 +135,7 @@ function App() {
           value={start}
           options={data}
           sx={{ width: 300, mr: {xs:0, sm:2}, mb:{xs:2, sm:0} }}
-          getOptionLabel={(option) => (option.name + " - " + option.icao_code)}
+          getOptionLabel={(option) => (option.name + " - " + option.iata_code ? option.iata_codeiata_code:option.icao_code)}
           renderInput={(params) => (
             <div>
               <TextField
@@ -167,7 +167,7 @@ function App() {
           value={end}
           options={data}
           sx={{ width: 300, mr: {xs:0, sm:2}, mb:{xs:2, sm:0} }}
-          getOptionLabel={(option) => (option.name + " - " + option.icao_code)}
+          getOptionLabel={(option) => (option.name + " - " + option.iata_code ? option.iata_codeiata_code:option.icao_code)}
           renderInput={(params) => (
             <div>
               <TextField
