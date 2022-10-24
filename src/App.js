@@ -128,7 +128,7 @@ function App() {
     <div className="App">
       <h1>Sekou Cox Test Result</h1>      
       <Toolbar
-        sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}}}
+        sx={{display: 'flex', flexDirection: {xs: 'column', sm: 'row'}, alignItems: 'center', justifyContent: 'center'}}
       >
         <Autocomplete
           id="start-airport"
